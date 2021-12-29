@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>
+            HOTEL
+        </title>
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+         <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+          <link rel="stylesheet"  href="/stylesheets/landing.css">
+    </head>
+    <body>
+        <div id="ful">
+<nav class="navbar navbar-default">
+    <!--div class="ui fixed inverted menu"-->
+    <div class=" container">
+    <div class="container-fluid" >
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        
+          
+            <a href="/" class="navbar-brand">HOME</a>
+            <a href="/rooms" class="navbar-brand">ROOMS</a>
+            <a href="/dining" class="navbar-brand">DINING</a>
+            <a href="/spa" class="navbar-brand">SPA</a>
+
+            </div>
+    
+            <div class="collapse navbar-collapse" id="bs-nav-demo">
+                <ul class="nav navbar-nav navbar-right" >
+                    <% if(!currentUser){ %>
+                <li><a href="/register">Sign Up</a></li>
+                <li><a href="/login">Log In</a></li>
+                  <% } else { %>
+                <li><a href="#">Signed In As <%= currentUser.username %></a></li>
+                <li><a href="/logout">Log Out</a></li>
+                   <% } %>
+                </ul>
+            </div>
+            
+    </div>
+    </div>
+    <!--/div-->
+</nav>
+
+<div class="container">
+    <% if(error && error.length > 0){ %>
+<div class="alert alert-danger" role="alert"><%= error %></div>
+<% } %>
+  <% if(success && success.length > 0){ %>
+<div class="alert alert-success" role="alert"><%= success %></div>
+<% } %>
+</div>
+
+
+</div>

@@ -1,0 +1,26 @@
+<% include ./partials/header %>
+<link rel="stylesheet"  href="/stylesheets/landing.css">
+ <div class="text-right">
+<a class="btn btn-success" href="/review">Add New Comment</a>
+</div>
+<div class="col-md-6" >
+<% reviews.forEach(function(review){ %>
+<p >
+    <div class="showpage">
+    <strong><%= review.author.username %></strong> - <%= review.text %>
+    </div>
+ 
+    <% if(currentUser && review.author.id.equals(currentUser._id)){ %>
+        <a class="btn btn-xs btn-warning" 
+        href="/show/<%= review._id %>/edit">Edit</a>
+        <form  id="delete-form" action="/show/<%= review._id %>?_method=DELETE" method="POST">
+          <button id="buttonn"  class"btn btn-xs btn-danger">DELETE</button>
+        </form>
+     <% }%>
+    <div class="about-border3"></div>
+</p>
+<% }) %>
+</div>
+
+
+<% include ./partials/footer %>

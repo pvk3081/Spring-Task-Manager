@@ -1,0 +1,48 @@
+<% include partials/header %>
+<div id="title1">
+<h2>YOUR BOOKING</h2>
+</div>
+        <% bookings.forEach(function(booking){ %>
+               <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Name</td>
+              <td><%= booking.name %></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>City</td>
+              <td><%= booking.city %></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Total Rooms</td>
+              <td><%= booking.room %></td>
+            </tr>
+             <tr>
+              <th scope="row">4</th>
+              <td>Checkin</td>
+              <td><%= booking.checkin %></td>
+            </tr>
+             <tr>
+              <th scope="row">5</th>
+              <td>Checkout</td>
+              <td><%= booking.checkout %></td>
+            </tr>
+          </tbody>
+        </table>
+                
+                
+           
+        <% }); %>
+        
+ 
+<% include partials/footer %>

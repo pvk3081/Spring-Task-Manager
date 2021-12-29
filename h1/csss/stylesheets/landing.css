@@ -1,0 +1,211 @@
+.navbar-brand{
+  margin:0 auto;
+}
+
+.carousel-inner{
+  height: 500px;
+}
+
+
+.navbar-header a{
+    border-right: 1px solid black;
+   letter-spacing: 0.12em;
+    line-height:19px;
+     
+height: 40px;
+margin: 0 16px;
+}
+.navbar-header a:last-child {
+     border-right:0;
+}
+
+.navbar-nav a{
+    border-right: 1px solid black;
+   letter-spacing: 0.12em;
+    line-height:19px;
+     
+height: 40px;
+margin: 0 16px;
+}
+.navbar-nav a:last-child {
+     border-right:0;
+}
+
+#item {
+    text-align: center;
+    margin-top: 40px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+}
+
+.about-border {
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #202020;
+    margin: 20px auto;
+}
+
+.centre{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+     font-size: large;
+     margin-top: 20px;
+     text-decoration: rgb(180,180,180,0.5);
+     margin-bottom :10px;
+}
+
+#review {
+    color: orange;
+     text-align: center;
+}
+
+
+.about-border2 {
+    display: block;
+    width: 580px;
+    height: 1px;
+    background: #DCDCDC;
+    margin: 30px auto;
+}
+
+.thumbnail img {
+    width:100%;
+}
+
+.thumbnail
+{
+    padding: 0;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+
+#image1{
+    margin-left: 50px;
+    width: 50%;
+}
+
+#thumbnail1{
+    display: inline-block;   
+    margin-left: 10px;
+    margin-top: 70px;
+}
+.caption{
+display: inline-block;    
+}
+
+#thumbnail2{
+    margin-top: 20px;
+}
+
+
+.column1 {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.photo{
+    text-align: center;
+    font-family: Lucida Console;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.photo2{
+    width: 40%; 
+    float:left;
+    font-family: Garamond;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.fa-star{
+    color: orange;
+}
+
+.photo3{
+    width: 60%; 
+    float:right;
+    margin-top: 0px;
+}
+
+.row{
+    display: inline;
+    margin-top: 70px;
+}
+.row2{
+    margin-top: 20px;
+}
+
+
+.about-border3 {
+    display: block;
+    width: 980px;
+    height: 1px;
+    background: #DCDCDC;
+    margin: 15px 25px;
+}
+
+.showpage{
+    margin-left: 25px;
+}
+
+.btn-warning{
+    margin-left: 25px;
+}
+
+#delete-form{
+    display:inline;
+}
+
+#buttonn{
+    background:red;
+    color:white;
+}
+
+#text1{
+    text-align: center;
+    font-family:  Courier New;
+}
+
+#title1{
+    font-family:  Courier New;
+    margin-bottom: 50px;
+    margin-left: 400px;
+}
+
+.right{
+     text-align: right;
+  
+}
+
+
+.left{
+     text-align: left;
+}
+
+
+.item img {
+  width:100%
+}
+
